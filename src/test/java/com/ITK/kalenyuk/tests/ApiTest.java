@@ -66,7 +66,7 @@ public class ApiTest extends ApiConfig {
             String oauthURL = loginRedirectUrl.split("\\?")[0];
             String stateOAuth = loginRedirectUrl.split("state=")[1].split("&")[0];
 
-            // Шаг 3: Выполните перенаправление
+            // Шаг 3: Выполнение перенаправления
             Response redirectResponse = RestAssured.given()
                     .redirects().follow(false)
                     .cookies(loginResponse.getCookies())
