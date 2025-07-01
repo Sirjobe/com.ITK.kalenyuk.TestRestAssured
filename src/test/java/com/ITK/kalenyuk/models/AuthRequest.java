@@ -1,14 +1,17 @@
 package com.ITK.kalenyuk.models;
 
 import lombok.Data;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
 @Data
+@RequiredArgsConstructor
 public class AuthRequest {
-    private String login;
+    @NonNull
+    private String username;
+    @NonNull
     private String password;
+    private String token;
 
-    public AuthRequest(String login, String password) {
-        this.login = login;
-        this.password = password;
-    }
+
 }
