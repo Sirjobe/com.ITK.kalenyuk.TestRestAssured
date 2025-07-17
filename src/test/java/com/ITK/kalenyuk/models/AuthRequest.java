@@ -8,10 +8,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AuthRequest {
     @NonNull
-    private String username;
-    @NonNull
-    private String password;
     private String token;
+
 
 
 }

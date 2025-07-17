@@ -1,0 +1,6 @@
+scenario,token,project,summary,description,expectedStatus
+valid,perm-UUEx.NDQtMTc=.00LCXy7QxhNJrcTEJPYaVTYfX2YOhn,QA,REST API test,Description,200
+invalid_token,invalid_token,QA,Test,Description,401
+empty_token,,QA,Test,Description,401
+invalid_project,perm-UUEx.NDQtMTc=.00LCXy7QxhNJrcTEJPYaVTYfX2YOhn,INVALID,Test,Description,404
+empty_summary,perm-UUEx.NDQtMTc=.00LCXy7QxhNJrcTEJPYaVTYfX2YOhn,QA,,Description,400
